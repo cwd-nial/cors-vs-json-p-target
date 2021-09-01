@@ -18,9 +18,13 @@ func NewHandler() Handler {
 }
 
 func (h handler) GetInfo() HandlerFunc {
+	type Version struct {
+		Number string
+	}
+
 	return func(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusOK)
 		w.Header().Set("Content-Type", "application/json")
-		_, _ = w.Write([]byte("version: dev-0.0.1"))
+		_, _ = w.Write([]byte("callback(\"dev-0.0.1\")"))
 	}
 }
