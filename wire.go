@@ -3,8 +3,8 @@
 package main
 
 import (
-	"github.com/cwd-nial/go-statik/config"
-	server "github.com/cwd-nial/go-statik/driver"
+	"github.com/cwd-nial/cors-vs-json-p-target/config"
+	server "github.com/cwd-nial/cors-vs-json-p-target/driver"
 	"github.com/google/wire"
 )
 

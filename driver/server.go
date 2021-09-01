@@ -3,7 +3,7 @@ package driver
 import (
 	"context"
 	"fmt"
-	"github.com/cwd-nial/go-statik/config"
+	"github.com/cwd-nial/cors-vs-json-p-target/config"
 	"github.com/gorilla/mux"
 	"github.com/sirupsen/logrus"
 	"net/http"

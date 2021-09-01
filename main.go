@@ -1,6 +1,6 @@
 package main
 
-import "github.com/cwd-nial/go-statik/pkg/shutdown"
+import "github.com/cwd-nial/cors-vs-json-p-target/pkg/shutdown"
 
 func main() {
 	Server().RunWithCancelCtx(shutdown.SignalContext())

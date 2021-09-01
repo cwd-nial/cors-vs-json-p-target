@@ -6,8 +6,8 @@
 package main
 
 import (
-	"github.com/cwd-nial/go-statik/config"
-	"github.com/cwd-nial/go-statik/driver"
+	"github.com/cwd-nial/cors-vs-json-p-target/config"
+	"github.com/cwd-nial/cors-vs-json-p-target/driver"
 )
 
 import (
