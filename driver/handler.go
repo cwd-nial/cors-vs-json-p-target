@@ -18,13 +18,12 @@ func NewHandler() Handler {
 }
 
 func (h handler) GetInfo() HandlerFunc {
-	type Version struct {
-		Number string
-	}
-
 	return func(w http.ResponseWriter, r *http.Request) {
-		w.WriteHeader(http.StatusOK)
 		w.Header().Set("Content-Type", "application/json")
-		_, _ = w.Write([]byte("callback(\"dev-0.0.1\")"))
+		w.Header().Set("Access-Control-Allow-Origin", "127.0.0.1")
+		w.Header().Set("Access-Control-Allow-Credentials", "true")
+
+		w.WriteHeader(http.StatusOK)
+		_, _ = w.Write([]byte("aliasGatewayCallback(\"dev-0.0.1\")"))
 	}
 }
