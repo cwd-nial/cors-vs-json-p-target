@@ -15,5 +15,6 @@ func NewRouter(h Handler) *mux.Router {
 }
 
 func setupRoutes(r *mux.Router, h Handler) {
-	r.Methods(http.MethodGet).Path("/info").HandlerFunc(h.GetInfo())
+	r.Methods(http.MethodGet).Path("/json-p-target").HandlerFunc(h.JsonPTarget())
+	r.Methods(http.MethodGet).Path("/cors-target").HandlerFunc(h.CorsTarget())
 }
